@@ -1,0 +1,11 @@
+{
+  "name": "3rd-student-management-system",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.4"
+  }
+}
