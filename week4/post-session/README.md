@@ -1,73 +1,56 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# 수업 후 과제
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## 이번 과제의 목적
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+- Postman 사용법 숙지
+- 여태까지 배운 NestJS 문법 복습
+- HTTP Header 개념 숙지 & Authorization (인가) 기본 개념 숙지 & 그걸 NestJS에서 사용해보기
 
-## Description
+## 과제 마감일
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- 과제가 살짝 늦게 나가는 감이 있어서, 이번 주 수요일(5월 3일) 18시로 하겠습니다!
 
-## Installation
+## 참고 자료
 
-```bash
-$ yarn install
-```
+- Postman 사용법
 
-## Running the app
+  [Postman, 어렵지 않게 사용하기 - 사용](https://gngsn.tistory.com/26)
 
-```bash
-# development
-$ yarn run start
+- 지난 세션 실시간 작성 코드 예시
 
-# watch mode
-$ yarn run start:dev
+  [11th-server/4th-realtime at 059afb49553ea5ee52bf75e009375c4a5cba3b05 · mju-likelion/11th-server](https://github.com/mju-likelion/11th-server/tree/059afb49553ea5ee52bf75e009375c4a5cba3b05/4th-realtime)
 
-# production mode
-$ yarn run start:prod
-```
+## 만들어야 하는 것
 
-## Test
+아래 영상처럼 작동하는 NestJS 서버를 만드시면 됩니다!
 
-```bash
-# unit tests
-$ yarn run test
+[Screen Recording 2023-05-01 at 4.47.02.mov](./Screen_Recording_2023-05-01_at_4.47.02.mov)
 
-# e2e tests
-$ yarn run test:e2e
+- 영상에서 하는 것을 읊어보자면
+    - 유저 리스트 조회
+    - 유저 2명 생성
+    - 유저 리스트 조회
+    - 포스트 리스트 조회
+    - 로그인 안한 채 포스트 생성 - 빠꾸
+    - 없는 사용자로 포스트 생성 - 빠꾸
+    - 정상적으로 포스트 생성
+    - 포스트 리스트 조회
+    - 포스트 하나 조회
+    - 없는 포스트 하나 조회
+    - 로그인 안한 채 포스트 수정 - 빠꾸
+    - 로그인 안한 채 포스트 삭제 - 빠꾸
+    - 없는 아이디의 포스트 수정 - 빠꾸
+    - 없는 아이디의 포스트 삭제 - 빠꾸
+    - 다른 유저로 포스트 수정 - 빠꾸
+    - 다른 유저로 포스트 삭제 - 빠꾸
+    - 정상적으로 포스트 수정
+    - 정상적으로 포스트 삭제
 
-# test coverage
-$ yarn run test:cov
-```
+<aside>
+⚠️ 우리는 지금 in-memory 로 데이터를 보관하고 있기 때문에, 서버가 재실행되면 (코드를 수정하면) 모든 데이터가 날아갑니다! 이 점 주의해주세요!
+</aside>
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+- 힌트 (미리 보셔도 됩니다!)
+    1. PostsService에서 UserService를 사용해야 할겁니다! 어떻게 해야 할지 고민해보시면 좋아요.
+    2. Headers 데코레이터를 사용하셔야 할겁니다! 어떻게 사용할지 요건 검색해보시면 도움이 되실겁니다. (안배운게 맞아요. 근데 앞으로도 배운거만 사용할 수 없을 상황이 많으실 것이라서 이런 상황을
+       만들어보았습니다.)
